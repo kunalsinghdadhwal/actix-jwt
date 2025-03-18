@@ -17,6 +17,6 @@ async fn main() -> Result<()> {
             .service(user_scope())
     })
     .bind(("127.0.0.1", 8080))?
-    .run()
-    .await
+    .run() 
+    .await 
 }
