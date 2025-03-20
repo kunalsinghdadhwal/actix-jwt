@@ -1,9 +1,9 @@
 use actix_web::{
     Error as ActixWebError, FromRequest, HttpRequest, dev::Payload, error::ErrorUnauthorized,
-    http::header::HeaderValue, web,
+    web,
 };
 use jsonwebtoken::{
-    Algorithm, DecodingKey, TokenData, Validation, decode, errors::Error as JwtError,
+    Algorithm, DecodingKey, Validation, decode 
 };
 use serde::{Deserialize, Serialize};
 use std::future::{Ready, ready};

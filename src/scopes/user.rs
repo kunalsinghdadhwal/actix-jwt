@@ -1,9 +1,8 @@
 use crate::extractors::authentication_token::{AuthenticationToken, Claims};
-use actix_web::{HttpResponse, Scope, body, web};
+use actix_web::{HttpResponse, Scope, web};
 use chrono::{Duration, Utc};
 use jsonwebtoken::{
-    Algorithm, DecodingKey, EncodingKey, Header, TokenData, Validation, decode, encode,
-    errors::Error as JwtError,
+    Algorithm, DecodingKey, EncodingKey, Header, Validation, decode, encode,
 };
 use serde::{Deserialize, Serialize};
 
